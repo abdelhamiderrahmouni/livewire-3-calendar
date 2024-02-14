@@ -1,11 +1,11 @@
 <?php
 
-namespace Asantibanez\LivewireCalendar;
+namespace AbdelhamidErrahmouni\LivewireCalendar;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Asantibanez\LivewireCalendar\Skeleton\SkeletonClass
+ * @see \AbdelhamidErrahmouni\LivewireCalendar\Skeleton\SkeletonClass
  */
 class LivewireCalendarFacade extends Facade
 {

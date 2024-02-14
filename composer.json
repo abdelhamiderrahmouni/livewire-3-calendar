@@ -1,11 +1,13 @@
 {
-    "name": "asantibanez/livewire-calendar",
+    "name": "abdelhamiderrahmouni/livewire-3-calendar",
     "description": "Laravel Livewire calendar component",
     "keywords": [
-        "asantibanez",
-        "livewire-calendar"
+        "livewire",
+        "calendar",
+        "livewire-calendar",
+        "livewire-3-calendar"
     ],
-    "homepage": "https://github.com/asantibanez/livewire-calendar",
+    "homepage": "https://github.com/abdelhamiderrahmouni/livewire-3-calendar",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -13,6 +15,11 @@
             "name": "Andrés Santibáñez",
             "email": "santibanez.andres@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Abdelhamid Errahmouni",
+            "email": "abdelhamiderrahmouni@gmail.com",
+            "role": "Maintainer"
         }
     ],
     "require": {
@@ -26,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Asantibanez\\LivewireCalendar\\": "src"
+            "AbdelhamidErrahmouni\\LivewireCalendar\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Asantibanez\\LivewireCalendar\\Tests\\": "tests"
+            "AbdelhamidErrahmouni\\LivewireCalendar\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +52,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Asantibanez\\LivewireCalendar\\LivewireCalendarServiceProvider"
+                "AbdelhamidErrahmouni\\LivewireCalendar\\LivewireCalendarServiceProvider"
             ],
             "aliases": {
-                "LivewireCalendar": "Asantibanez\\LivewireCalendar\\LivewireCalendarFacade"
+                "LivewireCalendar": "AbdelhamidErrahmouni\\LivewireCalendar\\LivewireCalendarFacade"
             }
         }
     }
