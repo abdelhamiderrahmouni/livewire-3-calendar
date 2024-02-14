@@ -15,6 +15,11 @@ You can install the package via composer:
 composer require abdelhamiderrahmouni/livewire-3-calendar
 ```
 
+Add the following line to your tailwind config
+```config
+"./vendor/abdelhamiderrahmouni/livewire-3-calendar/resources/**/*.blade.php",
+```
+
 ## Requirements
 
 This package uses `livewire/livewire` (https://laravel-livewire.com/) under the hood.
