@@ -16,9 +16,20 @@ composer require abdelhamiderrahmouni/livewire-3-calendar
 ```
 
 Add the following line to your tailwind config
-```config
-"./vendor/abdelhamiderrahmouni/livewire-3-calendar/resources/**/*.blade.php",
+```js
+module.exports = {
+    content:[
+        ...
+    
+        "./vendor/abdelhamiderrahmouni/livewire-3-calendar/resources/**/*.blade.php",
+    
+        ...
+    ],
+    ...
+}
 ```
+
+
 
 ## Requirements
 
