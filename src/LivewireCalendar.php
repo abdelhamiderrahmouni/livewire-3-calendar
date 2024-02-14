@@ -133,10 +133,10 @@ class LivewireCalendar extends Component
                                $beforeCalendarView = null,
                                $afterCalendarView = null)
     {
-        $this->calendarView = $calendarView ?? 'livewire-calendar::calendar';
-        $this->dayView = $dayView ?? 'livewire-calendar::day';
-        $this->eventView = $eventView ?? 'livewire-calendar::event';
-        $this->dayOfWeekView = $dayOfWeekView ?? 'livewire-calendar::day-of-week';
+        $this->calendarView = $calendarView ?? config('livewire-calendar.calendar');
+        $this->dayView = $dayView ?? config('livewire-calendar.day');
+        $this->eventView = $eventView ?? config('livewire-calendar.event');
+        $this->dayOfWeekView = $dayOfWeekView ?? config('livewire-calendar.day-of-week');
 
         $this->beforeCalendarView = $beforeCalendarView ?? null;
         $this->afterCalendarView = $afterCalendarView ?? null;
