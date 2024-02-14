@@ -30,6 +30,7 @@ use Livewire\Component;
  * @property boolean $dragAndDropEnabled
  * @property boolean $dayClickEnabled
  * @property boolean $eventClickEnabled
+ * @property boolean $hideWeekends
  */
 class LivewireCalendar extends Component
 {
@@ -59,6 +60,8 @@ class LivewireCalendar extends Component
     public $dayClickEnabled;
     public $eventClickEnabled;
 
+    public $hideWeekends;
+
     protected $casts = [
         'startsAt' => 'date',
         'endsAt' => 'date',
@@ -81,6 +84,7 @@ class LivewireCalendar extends Component
                           $dragAndDropEnabled = true,
                           $dayClickEnabled = true,
                           $eventClickEnabled = true,
+                          $hideWeekends = false,
                           $extras = [])
     {
         $this->weekStartsAt = $weekStartsAt ?? Carbon::SUNDAY;
@@ -107,7 +111,14 @@ class LivewireCalendar extends Component
         $this->dayClickEnabled = $dayClickEnabled;
         $this->eventClickEnabled = $eventClickEnabled;
 
+        $this->hideWeekends = $hideWeekends;
+
         $this->afterMount($extras);
+    }
+
+    public function toggleWeekends()
+    {
+        $this->hideWeekends = !$this->hideWeekends;
     }
 
     public function afterMount($extras = [])
